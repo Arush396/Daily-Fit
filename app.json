@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Daily-Fit",
+    "slug": "daily-fit",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0a0920",
+    "plugins": [
+      "expo-notifications",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0a0920",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.dailyfit.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#14103a"
+      },
+      "permissions": [
+        "ACTIVITY_RECOGNITION",
+        "POST_NOTIFICATIONS",
+        "RECEIVE_BOOT_COMPLETED"
+      ]
+    }
+  }
+}
